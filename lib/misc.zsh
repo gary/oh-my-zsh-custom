@@ -1,4 +1,4 @@
-if [ -x `which most` ]; then
+if [ $(command -v most) ]; then
     env_default PAGER 'most'
 else
     echo "failed"
